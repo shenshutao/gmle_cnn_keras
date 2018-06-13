@@ -4,9 +4,9 @@ export JOB_DIR=gs://$BUCKET_NAME/$JOB_NAME
 export REGION=asia-east1
 
 gcloud ml-engine jobs submit training $JOB_NAME \
-	--module-name cnn_model.custom_resNet \
+	--module-name keras_cnn_model.custom_resNet \
 	--runtime-version 1.8 \
 	--job-dir gs://$BUCKET_NAME/$JOB_NAME \
-	--package-path cnn_model \
+	--package-path keras_cnn_model \
 	--region $REGION \
-	--config cnn_model/cloudml-gpu.yaml
+	--config keras_cnn_model/cloudml-gpu.yaml

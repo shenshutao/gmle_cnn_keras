@@ -10,9 +10,9 @@ from keras.models import Model
 from keras.optimizers import Adam
 from keras.preprocessing.image import ImageDataGenerator
 
-from cnn_model.custom_getFile import download_file_from_google_drive
-from cnn_model.custom_predict import do_predict
-from cnn_model.custom_split_data import split_data
+from keras_cnn_model.custom_getFile import download_file_from_google_drive
+from keras_cnn_model.custom_predict import do_predict
+from keras_cnn_model.custom_split_data import split_data
 
 
 def preprocess_input(x):
